@@ -1,0 +1,7 @@
+<%= form_for @product, url: { action: :create } do |f| %>
+    <%= label_tag :name, '商品名' %>
+    <%= text_field_tag :name %>
+    <%= label_tag :price, '値段' %>
+    <%= text_field_tag :price %>
+    <%= submit_tag '商品を登録する' %>
+<% end %>
